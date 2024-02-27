@@ -1,0 +1,141 @@
+body {
+  background: #43c6ac;
+  background: -webkit-linear-gradient(to right, #191654, #43c6ac);
+  background: linear-gradient(to right, #191654, #43c6ac);
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todo-wrapper {
+  margin-top: 50px;
+  background-color: azure;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  font-weight: 250;
+}
+
+.todo-wrapper h2 {
+  margin: 0;
+}
+
+.todo-wrapper p {
+  font-style: italic;
+  color: rgb(46, 46, 46);
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+.todo-wrapper ol {
+  margin: 25px 0;
+}
+
+.todo-wrapper ol li {
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  margin: 5px 0;
+  padding: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+.todo-wrapper ol li:nth-child(even) {
+  background: #d9e7ff;
+  border: none;
+  border-radius: 5px;
+}
+
+.todo-wrapper form {
+  display: inline-block;
+}
+
+.todo-wrapper input {
+  padding: 3px 5px;
+}
+
+.todo-wrapper .completed {
+  text-decoration: line-through;
+}
+
+.todo-wrapper .pretty-btn {
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+  margin: 10px 2px;
+  padding: 5px 20px;
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 4px 2px #00d2ff;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  color: #ffff;
+}
+
+.todo-wrapper .pretty-btn:hover {
+  cursor: pointer;
+}
+
+.todo-wrapper .pretty-btn:active {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  box-shadow: 1px 1px #182848;
+  transform: translateX(3px);
+}
+
+.todo-wrapper #clear-btn {
+  background: #333333;
+  background: -webkit-linear-gradient(to right, #dd1818, #333333);
+  background: linear-gradient(to right, #dd1818, #333333);
+  box-shadow: 4px 2px #ed213a;
+}
+.todo-wrapper #clear-btn:active {
+  background: #ed213a;
+  background: -webkit-linear-gradient(to right, #ff416c, #ed213a);
+  background: linear-gradient(to right, #ff416c, #ed213a);
+  box-shadow: 1px 1px #333333;
+  transform: translateX(3px);
+}
+
+.todo-wrapper #save-btn {
+  background: #52c234;
+  background: -webkit-linear-gradient(to left, #061700, #52c234);
+  background: linear-gradient(to left, #061700, #52c234);
+  box-shadow: 4px 2px #24fe41;
+}
+.todo-wrapper #save-btn:active {
+  background: #11998e;
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+  background: linear-gradient(to right, #38ef7d, #11998e);
+  box-shadow: 1px 1px #061700;
+  transform: translateX(3px);
+}
+
+#control-wrapper {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media only screen and (min-width: 1400px) {
+  .todo-wrapper {
+    width: 50%;
+  }
+
+  .todo-wrapper input {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+  .todo-wrapper {
+    width: 75%;
+  }
+
+  .todo-wrapper input {
+    width: 400px;
+  }
+}
